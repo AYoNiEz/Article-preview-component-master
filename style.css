@@ -115,7 +115,7 @@ p{
     position: absolute;
     overflow: hidden;
     right: 260px;
-    bottom: 330px;
+    bottom: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -136,7 +136,7 @@ p{
     background-color: hsl(217, 19%, 35%);
     position: absolute;
     right: 380px;
-    bottom: 320px;
+    bottom: 290px;
     transform: rotateY(0deg) rotate(45deg);
 }
 
