@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1440px;
+    height: 700px;
+    background-color: #edf2f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 800px; 
+    background-color: #ffffff;
+    box-shadow: 10px 10px 40px hsl(211, 67%, 90%);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.furniture{
+    max-height: 300px;
+    max-width: 300px;
+}
+img{
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+h1{
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    color: #4f576c;
+}
+h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color:hsl(212, 23%, 69%);
+    letter-spacing: 8px;
+    
+}
+h3{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: #4f576c;
+}
+span{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(212, 23%, 69%);
+}
+p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    color:hsl(212, 23%, 69%);
+    padding-top: 14px;
+    line-height: 1.6;
+}
+.detail{
+    max-width: 500px;
+    height: 300px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.profile{
+    max-width: 500px;
+    height: 75px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+}
+.profilepicture{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-top: -15px;
+}
+.info{
+    max-width: 200;
+    margin-top: -15px;
+    padding-right:170px;
+}
+#share{
+    width: 40px;
+    height: 40px;
+    background-color:hsl(210, 46%, 95%);
+    float: right;
+    margin-top: -15px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    z-index: 20; 
+}
+#share.active{
+    background-color:#4f576c;
+}
+
+#box-share{
+    display: none;
+}
+.socialshare{
+    width:250px;
+    height: 60px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+    right: 260px;
+    bottom: 330px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    box-sizing: border-box;
+}
+.socialicon{
+    height: 50px;
+    width: 125px;
+    align-items: center;
+}
+.social{
+    padding-left: 10px;
+}
+.triangle{
+    width: 20px;
+    height: 20px;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    right: 380px;
+    bottom: 320px;
+    transform: rotateY(0deg) rotate(45deg);
+}
+
+@media screen and (max-width: 420px){
+    .container{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+    }
+    .furniture{
+        max-height: 180px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        width: 306px;
+        height: 180px;
+        object-position: 0% 60%;
+    }
+    
+    h1{
+        font-family: 'Manrope', sans-serif;
+        font-size: 15px;
+        color: #4f576c;
+    }
+    .detail{
+        max-width: 300px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .profile{
+        max-width: 240px;
+        height: 95px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .profilepicture{
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        margin-top: -15px;
+    }
+    .info{
+        max-width: 300;
+        padding-right: 10px;
+        padding-right: 20px;
+    }
+    h3{
+        font-family: 'Manrope', sans-serif;
+        font-size: 12px;
+        color: #4f576c;
+    }
+    span{
+        font-family: 'Manrope', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        color: hsl(212, 23%, 69%);
+    }
+    .socialshare{
+        bottom: 77px;
+        left: 30px;
+        width: 300px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0;
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        padding: 20px 30px 20px 30px;
+        box-sizing: border-box;
+    }
+    .socialicon{
+        height: 50px;
+        width: 125px;
+        align-items: center;
+        padding-right: 30px;
+    }
+    
+}
